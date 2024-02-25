@@ -27,51 +27,50 @@
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='methodology.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='carbon_app.css') }}">
 
+      <link rel="icon" href="/static/icons/seedling-solid.ico">
+
       <!-- To activate media queries in devices -->
       <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
 
         {% if title %}
             <title>{{ title }}</title>
         {% else %}
-            <title>home</title>
+            <title>Carbon Accounting Solutions</title>
         {% endif %}
         
     </head>
     <body>
-        <section class="section_carbon_app_navbar">
-          <div class="container">
-            <div class="carbon_app_navbar">
-              <h1 class="logo">
-                <span class="text-logo"><i class="fa-solid fa-leaf"></i> Carbon</span> App
-              </h1>
-              <nav>
-                <ul>
-                    <li>
-                        <a href="{{url_for('home')}}">Home</a>
-                    </li>
-                    <li>
-                        <a href="{{url_for('methodology')}}">Methology</a>
-                    </li>
-                    <li>
-                        <a href="{{url_for('carbon_app')}}">Carbon App</a>
-                    </li>
-                </ul>
-              </nav> 
-            </div>
+      <section class="section_carbon_app_navbar">
+        <div class="container">
+          <div class="carbon_app_navbar">
+            <a class="logo" href="{{url_for('home')}}"><i class="fa-solid fa-seedling"></i></a>
+            <nav>
+              <ul>
+                  <li>
+                      <a href="{{url_for('home')}}">Home</a>
+                  </li>
+                  <li>
+                      <a href="{{url_for('methodology')}}">Methology</a>
+                  </li>
+                  <li>
+                      <a href="{{url_for('carbon_app')}}">Carbon App</a>
+                  </li>
+              </ul>
+            </nav> 
           </div>
-        </section>
+        </div>
+      </section>
 
         {% block content %} {% endblock %}
 
         <section class="section_footer">
           <div class="container">
             <div class="footer">
-              <h1>
-                Carbon App 
+              <p>
                 <a href="#">
-                  <i class="fa-solid fa-circle-up" style="color: #568c63"></i>
+                  Return to top
                 </a>
-              </h1>
+              </p>
             </div>
           </div>
         </section>

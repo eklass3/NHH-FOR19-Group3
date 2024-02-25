@@ -1,11 +1,4 @@
 /* Colors */
-/* Rainy theme 5 -Green Digitalization Course and Students Apps-:
-Navbar (background): #8bbbd9
-Navbar (a hover): #466fa6
-Navbar (logo): #568c63
-Navbar (a menu): #2a4359
-*/
-
 /* Google fonts Roboto  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
@@ -23,13 +16,14 @@ body {
 .container {
   margin: auto;
   max-width: 1320px;
+  padding: 0 20px;
 }
 ul { 
   list-style: none;
   font-size: 400;
 }
 a {
-  color: #333;
+  color: #2a4359;
   text-decoration: none;
 }
 h1, h2 {
@@ -45,40 +39,35 @@ img {
 }
 /* Navbar  */
 .section_carbon_app_navbar {
-  background-color:#6c4109;
+  background-color:rgb(70, 88, 96);
 }
 .carbon_app_navbar {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 70px;
+  justify-content: space-between;
   align-items: center;
-  background-color: #6c4109;
-  padding: 0 0px;
+  padding: 20px 0;
 }
 .carbon_app_navbar a {
-  color: #87a95b;
+  color: #fff;
   padding: 10px 20px;
   margin: 0 5px;
   font-size: 20px;
   text-decoration: none;
 }
 .carbon_app_navbar a:hover{
-  border-bottom: #2a4359 4px solid;
+  color: #0b9719;
 }
 .carbon_app_navbar ul {
   display: flex;
-  flex-direction: row;
 }
 .carbon_app_navbar .logo {
   font-weight: 400;
-}
-.text-logo {
-  color: #568c63;
+  font-size: 32px;
+  color: #fff;
 }
 /* Footer  */
 .section_footer{
-  background-color:#6c4109;
+  background-color:rgb(70, 88, 96);
 }
 .footer {
   display: flex;
@@ -86,27 +75,31 @@ img {
   justify-content: center;
   height: 70px;
   align-items: center;
-  background-color: #6c4109;
+  background-color: rgb(70, 88, 96);
   padding: 0 0px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover{
+  color: #0b9719;
 }
 
 
 /* Media query */
 @media(max-width:768px){
   .carbon_app_navbar {
-    height: 160px;
     flex-direction: column;
+    align-items: flex-start;
   }
   .carbon_app_navbar a {
     font-size: 15px;
     padding: 5px 20px;
   }
   .carbon_app_navbar ul {
-    display: flex;
     flex-direction: column;
-  }
-  .carbon_app_navbar a:hover{
-    color: #568c63;
-    border-bottom: #2a4359 2px solid;
+    padding: 0;
   }
 }

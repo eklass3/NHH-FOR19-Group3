@@ -12,12 +12,12 @@ p {
 }
 /* Section header_home */
 .section_header_home {
-  background-color:#87a95b;
+  background-color:#ffffff;
 }
 .header_home {
   display: flex;  
   align-items: start;
-  background: #87a95b;
+  background: #ffffff;
 }
 .header_home .box {
   flex: 1;
@@ -54,19 +54,54 @@ p {
   justify-content:center;
   align-items:center;
 }
+
+.hero-banner {
+  background-image: url('/static/hero_img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh; /* Full height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  z-index: 1; /* Make sure the text appears above the ::after pseudo-element */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  z-index: 1; /* Make sure the buttons appear above the ::after pseudo-element */
+  background-color: #4ab430;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #398b2f;
+}
 /* Section developers */
 .section_developers {
-  background-color:#075725;
+  background-color:rgb(70, 88, 96);
 }
 .developers {
-  display: flex;  
-  align-items: start;
-  background: #05430b;
+  display: flex;
+  align-items: stretch;
 }
 .developers .box {
   flex: 1;
-  background: #49736f;
-  color: rgb(156, 209, 160);
+  background: linear-gradient(to right, #096f13, #0b9719);;
   border-radius: 10px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -74,36 +109,25 @@ p {
   align-items: center;
   justify-content: center;
 }
-.developers .box:nth-of-type(1) {
-  flex-grow:4;
+
+.developers .box p {
+  color: #fff;
+  text-align: justify;
+  font-weight: lighter;
 }
-.developers .box:nth-of-type(2) {
-  flex-grow:4;
+
+.developers .box h3 {
+  margin-top: 25px;
+  color: #fff;
+  font-weight: bold;
 }
-.developers .box:nth-of-type(3) {
-  flex-grow:4;
+
+.developers h1 {
+  font-weight: bolder;
+  color: #fff;
+  padding-top: 50px;
 }
-.developers .box2 {
-  flex: 1;
-  background: #49736f;
-  color: rgb(170, 235, 195);
-  border-radius: 10px;
-  margin: 20px 10px;
-  padding: 15px 20px;
-  text-align:center;
-  align-items: center;
-  justify-content: center;
-}
-.developers .box2:nth-of-type(1) {
-  flex-grow:4;
-}
-.developers .box2:nth-of-type(2) {
-  flex-grow:4;
-}
-.developers .box2:nth-of-type(3) {
-  flex-grow:4;
-  background: #c5c8d9;
-}
+
 .section_container_buttons_developers {
   display: flex;
   justify-content: center;
@@ -119,7 +143,6 @@ p {
   border-radius: 5px;
   text-decoration: none;
   font-size: 18px;
-  background-color: #49736f;
   border: 2px solid  #c5c8d9;
 }
 .btn_developers:hover {
@@ -127,6 +150,12 @@ p {
   background-color: #c5c8d9;
   border: 2px solid #c5c8d9;
   text-decoration: none;
+}
+.img_profile {
+  object-fit: cover; /* Make sure the image covers the whole width and height */
+  width: 250px; /* Set the width of the image */
+  height: 250px; /* Set the height of the image */
+  border-radius: 50%; /* Round the corners to make the image circular */
 }
 
 
