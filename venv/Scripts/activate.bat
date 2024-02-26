@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Nozomi Gomi\Documents\4-1,2 FOR19 Green Digitalization and App Development\NHH-FOR19-Group3-main\NHH-FOR19-Group3\venv
+set VIRTUAL_ENV=C:\Users\fmull\OneDrive\Documents\UNIL\NHH Spring 2024\FOR19 - Green Digit and App Dev\NHH-FOR19-Group3\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
