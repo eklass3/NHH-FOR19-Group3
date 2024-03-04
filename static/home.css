@@ -80,7 +80,7 @@ p {
   z-index: 1; /* Make sure the buttons appear above the ::after pseudo-element */
   background-color: #4ab430;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 30px;
   margin: 10px;
   border: none;
   text-transform: uppercase;
@@ -98,6 +98,7 @@ p {
 .developers {
   display: flex;
   align-items: stretch;
+
 }
 .developers .box {
   flex: 1;
