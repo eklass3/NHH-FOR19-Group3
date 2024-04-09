@@ -173,3 +173,14 @@ p {
     align-items: center;
   }
 }
+.box {
+  flex: 1;
+  background: #9fa7bf;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}

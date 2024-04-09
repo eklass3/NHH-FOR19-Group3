@@ -1,16 +1,31 @@
 {% extends "layout.html" %}
 {% block content %}
 
+
 <!-- Header -->
 <section class="section_header_home">
-
-    <section class="hero-banner">
-      <h1>Eco-Vision Partners</h1>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+      {% for category, message in messages %}
+          <div class="alert alert-{{ category }}">
+              {{ message }}
+          </div> 
+      {% endfor %}
+  {% endif %}
+{% endwith %}
+  <section class="hero-banner">
+<h1>Eco-Vision Partners</h1>
+{% if current_user.is_authenticated %}
+  <div class="hero-btns">
+    <a href="{{url_for('carbon_app.carbon_app_home')}}" class="btn">Access the Carbon App</a>
+  </div>
+      {% else %}
       <div class="hero-btns">
         <a href="{{url_for('users.login')}}" class="btn">Login</a>
         <a href="{{url_for('users.register')}}" class="btn">Register</a>
       </div>
-    </section>
+{% endif %}
+      </section>
 </section> 
 
 <!-- Developers -->
@@ -21,7 +36,7 @@
       <h1 style="margin-bottom: 20px;">Meet our Team</h1>
       <p style="color:white; width: 97%; text-align: left;">This is the team behind the project. We are composed of 7 motivated students from all over the world. Our different backgrounds help us create a complete and diversified work environment. The mission of our project is to raise awareness among our users about how their lifestyles affects the planet and to provide them the motivation to change some habits. By selling our services to companies, we want to offer a user-friendly and modern tool for the employees could use to understand their environmental impact. Moreover, companies, by applying our recommendations towards an eco-friendlier lifestyle, could receive a green certificate that would give credit for the progress operated. </p>
       <p 
-      style="color:white;" >If you want to learn more about our business model, click <a href="#">here</a>.</p>
+      style="color:white;" >If you want to learn more about our business model, click <a href="{{url_for('about_us.about_us_home')}}">here</a>.</p>
     </div>
     
     <div class="developers">
