@@ -18,8 +18,11 @@ h4 {
 ol {
   font-size: 18px;
 }
-
-
+h3 {
+  font-size: 24;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
 /* Section header */
 .section_header_methodology {
@@ -81,62 +84,173 @@ ol {
   text-align: center;
 }
 
-/* Section methodology */
-.section_body_methodology {
-  background-color:rgb(70, 88, 96);
+/* New CSS */
+.methodology-section {
+  background-color: #2a4359;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
 }
-.methodology {
-  display: flex;  
-  align-items: start;
-  background: #fff;
-  border-radius: 10px;
-  margin: 10px;
+
+.methodology-section h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
 }
-/* Table with one column */
-.methodology .box_table1 {
-  flex: 1;
-  background: rgb(92, 102, 106);
-  color: black;
-  border-radius: 10px;
-  margin: 10px 10px 10px 10px;
-  padding: 15px 15px;
-  text-align:center;
-  align-items: center;
+
+.methodology-section p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.transport-grid {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-}
-.methodology .box_table1:nth-of-type(1) {
-  flex-grow:1;
-  background: rgb(86, 94, 97);
-}
-.methodology .box_table1:nth-of-type(2) {
-  flex-grow:4;
-}
-.methodology .box_table1:nth-of-type(3) {
-  flex-grow:1;
-  background: #36903f;
+  gap: 2em;
+  margin-bottom: 50px;
 }
 
-
-/* Table with two columns */
-.methodology .box_table2 {
-  flex: 1;
-  background: rgb(181, 188, 190);
-  color: black;
+.transport-card-electric {
+  background-color: #eef34f;
   border-radius: 10px;
-  margin: 10px 10px 10px 10px;
-  padding: 15px 15px;
-  text-align:center;
-  align-items: center;
-  justify-content: center;
+  padding: 1em;
+  width: 200px;
+  transition: transform 0.3s ease;
 }
 
+.transport-card-electric:hover {
+  transform: scale(1.05);
+}
 
+.transport-card-electric i {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
 
-@media (max-width:768px) { 
-  .header {
-    flex-direction: column;
-  } 
-  .methodology {
-    flex-direction: column;
-  } 
+.transport-card-electric h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+
+.transport-card-electric p {
+  font-size: 1em;
+  color: #414141;
+}
+
+.transport-card-fossil {
+  background-color: #292244;
+  border-radius: 10px;
+  padding: 1em;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.transport-card-fossil:hover {
+  transform: scale(1.05);
+}
+
+.transport-card-fossil i {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
+.transport-card-fossil h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
+.transport-card-fossil p {
+  font-size: 1em;
+  color: #cbcbcb;
+}
+
+.transport-card-plane {
+  background-color: #74fffd;
+  border-radius: 10px;
+  padding: 1em;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.transport-card-plane:hover {
+  transform: scale(1.05);
+}
+
+.transport-card-plane i {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+
+.transport-card-plane h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+
+.transport-card-plane p {
+  font-size: 1em;
+  color:#414141;
+}
+
+.transport-card-ferry {
+  background-color: #0036c0;
+  border-radius: 10px;
+  padding: 1em;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.transport-card-ferry:hover {
+  transform: scale(1.05);
+}
+
+.transport-card-ferry i {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
+.transport-card-ferry h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
+.transport-card-ferry p {
+  font-size: 1em;
+  color:#cbcbcb;
+}
+
+.transport-card-walk {
+  background-color: #14da27;
+  border-radius: 10px;
+  padding: 1em;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.transport-card-walk:hover {
+  transform: scale(1.05);
+}
+
+.transport-card-walk i {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+
+.transport-card-walk h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+
+.transport-card-walk p {
+  font-size: 1em;
+  color:#414141;
 }

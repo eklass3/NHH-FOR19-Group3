@@ -102,7 +102,7 @@ p {
 }
 .developers .box {
   flex: 1;
-  background: linear-gradient(to right, #1c4220, #24602a);;
+  background: linear-gradient(to right, #1c4220, #24602a);
   border-radius: 10px;
   margin: 20px 10px;
   padding: 15px 20px;
