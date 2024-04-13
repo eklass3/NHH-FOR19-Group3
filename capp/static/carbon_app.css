@@ -18,7 +18,7 @@ h4 {
 }
 /* Section header */
 .section_header_carbon_app {
-  background-color:#466fa6;
+  background-color:#466fa6; 
 }
 .header_carbon_app {
   display: flex;  
@@ -42,6 +42,22 @@ h4 {
 .header_carbon_app .box:nth-of-type(2) {
   flex-grow:1;
 }
+
+.image-banner-carbon-app {
+  background-image: url('/static/ychcna2jtp.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh; /* Full height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
 .container_buttons_links_header_carbon_app {
   display: flex;
   justify-content: center;
@@ -54,7 +70,6 @@ h4 {
 .container_buttons_links_header_carbon_app btn {
   width: 100px;
   height: 100px;
-  background: #466fa6;
   color: #fff;
   display: flex;
   justify-content:center;
@@ -62,17 +77,17 @@ h4 {
 }
 /* Section carbon_app_new_entry_main */
 .section_carbon_app_new_entry_main {
-  background-color:#c5c8d9;
+  background-color:rgb(70, 88, 96);
 }
 .carbon_app_new_entry_main {
   display: flex;  
   align-items: start;
-  background: #c5c8d9;
+  background: rgb(70, 88, 96);
 }
 .carbon_app_new_entry_main .box {
   flex: 1;
-  background: #568c63;
-  color: black;
+  background: linear-gradient(to right, #1c4220, #24602a);
+  color: white;
   border-radius: 10px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -107,23 +122,47 @@ h4 {
   border-radius: 5px;
   text-decoration: none;
   font-size: 18px;
-  background-color: #568c63;
-  border: 2px solid  #2a4359;
+  border: 2px solid  white;
 }
 .btn_carbon_app_new_entry_main:hover {
   color: #fff;
-  background-color: #2a4359;
-  border: 2px solid #2a4359;
+  background-color: #24602a;
+  border: 2px solid white;
+  text-decoration: none;
+}
+.btn_carbon_app_new_entry_main_dark {
+  padding: 10px 10px;
+  margin: 10px 10px 10px 10px;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid  black;
+}
+.btn_carbon_app_new_entry_main_dark:hover {
+  color: black;
+  background-color: #656565;
+  border: 2px solid black;
   text-decoration: none;
 }
 /*Container new_entry */
 .new_entry {
-  display: flex;
   background: #c5c8d9;
+  background-image: url('/static/Rondane-National-Park-Norway.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh; /* Full height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
   }  
 .new_entry .container {
   display: flex;
-  background: #c5c8d9;
 }
 .new_entry .container {
   display: flex;
@@ -132,7 +171,7 @@ h4 {
 }
 .new_entry .container .box {
   flex: 1;
-  background: #c5c8d9;
+  background: rgb(70, 88, 96);
   border-radius: 2px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -149,7 +188,7 @@ h4 {
 .new_entry .container  .box:nth-of-type(2) {
   flex-grow:6;
   max-width: 450px;
-  background: #568c63;
+  background: linear-gradient(to right, #1c4220, #24602a);
   border-radius: 10px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -166,11 +205,11 @@ h4 {
 /*Container table_main */
 .table_main {
   display: flex;
-  background: #c5c8d9;
+  background: white;
   }  
 .table_main .container {
   display: flex;
-  background: #c5c8d9;
+  background: white;
 }
 .table_main .container {
   display: flex;
@@ -179,7 +218,7 @@ h4 {
 }
 .table_main .container .box {
   flex: 1;
-  background: #c5c8d9;
+  background: white;
   border-radius: 2px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -195,11 +234,12 @@ h4 {
 }  
 .table_main .container  .box:nth-of-type(2) {
   flex-grow:6;
-  background: #568c63;
+  background: #d7d7d7;
   border-radius: 10px;
   margin: 20px 10px;
   padding: 15px 20px;
   text-align:center;
+  color: #000;
 }  
 .table_main .container  .box:nth-of-type(3) {
   flex-grow:1;
@@ -214,11 +254,11 @@ h4 {
 /*Container two_emissions_graphs */
 .two_emissions_graphs {
   display: flex;
-  background: #c5c8d9;
+  background: white;
   }  
 .two_emissions_graphs .container {
   display: flex;
-  background: #c5c8d9;
+  background: white;
 }
 .two_emissions_graphs .container {
   display: flex;
@@ -227,7 +267,7 @@ h4 {
 }
 .two_emissions_graphs .container .box {
   flex: 1;
-  background: #c5c8d9;
+  background: white;
   border-radius: 2px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -235,7 +275,7 @@ h4 {
 }  
 .two_emissions_graphs .container  .box:nth-of-type(1) {
   flex-grow:1;
-  background: #568c63;
+  background: #d7d7d7;
   border-radius: 10px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -243,7 +283,7 @@ h4 {
 }  
 .two_emissions_graphs .container  .box:nth-of-type(2) {
   flex-grow:1;
-  background: #568c63;
+  background: #d7d7d7;
   border-radius: 10px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -254,11 +294,11 @@ h4 {
 /*Container main menu */
 .main_menu {
   display: flex;
-  background: #c5c8d9;
+  background: white;
   }  
 .main_menu .container {
   display: flex;
-  background: #c5c8d9;
+  background: white;
 }
 .main_menu .container {
   display: flex;
@@ -284,7 +324,7 @@ h4 {
 .main_menu .container  .box:nth-of-type(2) {
   flex-grow:6;
   max-width: 450px;
-  background: #568c63;
+  background: #d7d7d7;
   border-radius: 10px;
   margin: 20px 10px;
   padding: 15px 20px;
