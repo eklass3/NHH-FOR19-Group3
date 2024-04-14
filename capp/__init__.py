@@ -10,7 +10,6 @@ application = Flask(__name__)
 ### Code GitHub
 application.config['SECRET_KEY'] = os.environ['SECRET_KEY']  
 DBVAR = f"postgresql://{os.environ['RDS_USERNAME']}:{os.environ['RDS_PASSWORD']}@{os.environ['RDS_HOSTNAME']}/{os.environ['RDS_DB_NAME']}"
-#DBVAR = 'postgresql://postgres:FOR19dbPW*@awseb-e-x4nxhamvgb-stack-awsebrdsdatabase-ewpxl13mtsg2.cjysmoiaaajh.eu-north-1.rds.amazonaws.com:5432/ebdb'
 application.config['SQLALCHEMY_DATABASE_URI'] = DBVAR 
 application.config['SQLALCHEMY_BINDS'] ={'transport': DBVAR}
 
